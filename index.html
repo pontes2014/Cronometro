@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 15pt Arial;
+            background: linear-gradient(90deg, rgba(174, 238, 214, 1) 0%, rgba(64, 226, 194, 1) 100%);
+        }
+
+        header {
+            color: white;
+            text-align: center;
+        }
+
+        section {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            width: 500px;
+            margin: auto;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.637);
+
+        }
+
+        #card1 {
+            text-align: center;
+        }
+
+
+        #card2 {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        footer {
+            color: white;
+            text-align: center;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>CRONOMETRO</h1>
+    </header>
+
+    <section>
+        <div id="card1">
+            <button onclick="cronometro('iniciar')">INICIAR</button>
+            <button onclick="cronometro('parar')">PARAR</button>
+            <button onclick="cronometro('reiniciar')">REINICIAR</button>
+        </div>
+
+        <div id="card2">
+            <h3 id="tempo">00:00:00</h3>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy;Pedro Pontes Developer</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
